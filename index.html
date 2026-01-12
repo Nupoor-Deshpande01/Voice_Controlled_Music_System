@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Smart Volume Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎵 Smart Volume Control System</h1>
+        <p class="subtitle">
+            Music volume automatically adjusts when you speak
+        </p>
+
+        <!-- Music Upload -->
+        <div class="card">
+            <h3>Select a Song</h3>
+            <input type="file" id="audioFile" accept="audio/*">
+        </div>
+
+        <!-- Audio Player -->
+        <div class="card">
+            <h3>Music Player</h3>
+            <audio id="musicPlayer" controls></audio>
+        </div>
+
+        <!-- Microphone Control -->
+        <div class="card">
+            <h3>Microphone Control</h3>
+            <button id="micBtn">Enable Microphone</button>
+            <p id="micStatus">Microphone not enabled</p>
+        </div>
+
+        <!-- Loudness Display -->
+        <div class="card">
+            <h3>Voice Loudness</h3>
+            <div class="meter">
+                <div id="loudnessBar"></div>
+            </div>
+            <p id="loudnessValue">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
